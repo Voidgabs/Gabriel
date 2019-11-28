@@ -1,4 +1,4 @@
-package GerenciaBib;
+package gerenciabib;
 
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
