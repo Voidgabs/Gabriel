@@ -176,3 +176,63 @@ public class GerenciaBib{       //Gerenciador da Biblioteca (Atividade)
                this.Genero = null;
            }
         }
+
+    public class Livro{
+            private String NomeLivro;
+            private String Autor;
+            private String Genero;
+
+            public String getNomeLivro(){
+                return this.NomeLivro;
+            }
+
+            public void setNomeLivro(String NomeLivro){
+                this.NomeLivro = NomeLivro;
+            }
+
+            public String getAutor(){
+                return this.Autor;
+            }
+
+            public void setAutor(String Autor){
+                this.Autor = Autor;
+            }
+
+            public String getGenero(){
+                return this.Genero;
+            }
+
+            public void setGenero(String Genero){
+                this.Genero = Genero;
+            }
+        } 
+    
+        public class DVD{
+            private String NomeDVD;
+            private String Autor;
+            private String Genero;
+
+            public String getNomeDVD(){
+                return this.NomeDVD;
+            }
+
+            public void setNomeDVD(String NomeDVD){
+                this.NomeDVD = NomeDVD;
+            }
+
+            public String getAutor(){
+                return this.Autor;
+            }
+
+            public void setAutor(String Autor){
+                this.Autor = Autor;
+            }
+
+            public String getGenero(){
+                return this.Genero;
+            }
+
+            public void setGenero(String Genero){
+                this.Genero = Genero;
+            }
+        }
