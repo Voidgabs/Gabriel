@@ -238,3 +238,79 @@ public class GerenciaBib{       //Gerenciador da Biblioteca (Atividade)
                 this.Genero = Genero;
             }
         }
+        public abstract class Emprestimo{
+            private String Nome;
+            private String NomeLivro;
+            private String Autor;
+            private int CPF;
+            
+            public String getNome(){
+                return this.Nome;
+            }
+
+            public void setNome(final String Nome){
+                this.Nome = Nome;
+            }
+
+            public String getNomeLivro(){
+                return this.NomeLivro;
+            }
+
+            public void setNomeLivro(final String NomeLivro){
+                this.NomeLivro = NomeLivro;
+            }
+
+            public String getAutor(){
+                return this.Autor;
+            }
+
+            public void setAutor(final String Autor){
+                this.Autor = Autor;
+            }
+
+            public int getCPF(){
+                return this.CPF;
+            }
+
+            public void setCPF(final int CPF){
+                this.CPF = CPF;
+            }
+        
+        public Emprestimo(final String Nome, final String NomeLivro, final String Autor, final int CPF){
+            this.Nome = null;
+            this.NomeLivro = null;
+            this.Autor = null;
+            this.CPF = 0;
+            }
+        }
+
+        public class Data{
+        public String Date(){
+            return new SimpleDateFormat("DD/MM/YYYY").format(new Data(0, 0));
+            }
+
+             private int DataEmp;
+             private int DataDev;
+
+             public int getDataEmp(){
+             return this.DataEmp;
+             }
+
+             public void setDataEmp(final int DataEmp){
+             this.DataEmp = DataEmp;
+             }
+
+             public int getDataDev(){
+             return this.DataDev;
+             }
+
+             public void setDataDev(final int DataDev){
+             this.DataDev = DataDev;
+             }
+
+             public Data(final int DataEmp, final int DataDev){
+             this.DataEmp = 0;
+             this.DataDev = 0;
+             }
+        }    
+}
